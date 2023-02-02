@@ -1,0 +1,207 @@
+.bx-wrapper {
+  margin-bottom: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.bx-wrapper .bx-controls {
+  position: absolute;
+  display: flex !important;
+  align-items: center;
+  height: 50px;
+}
+
+.slider-1 .bx-wrapper .bx-controls {
+  left: 50%;
+  bottom: 65px;
+  transform: translateX(-50%);
+  justify-content: flex-start;
+  width: 1200px;
+  padding: 0 30px;
+}
+
+.slider-2 .bx-wrapper .bx-controls {
+  top: -52px;
+  right: 0;
+  justify-content: center;
+  width: auto;
+  z-index: 2;
+}
+
+@media (max-width: 1250px) {
+  .slider-1 .bx-wrapper .bx-controls {
+    width: 100%;
+    padding: 0 45px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .slider-1 .bx-wrapper .bx-controls {
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .slider-1 .bx-wrapper .bx-controls {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .slider-1 .bx-wrapper .bx-controls {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider-1 .bx-wrapper .bx-controls {
+    bottom: 35px;
+  }
+}
+
+
+/* 페이저 */
+.bx-wrapper .bx-pager {
+  position: static !important;
+  width: auto !important;
+  padding-top: 0 !important;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  vertical-align: middle !important;
+}
+
+
+.slider-1 .bx-wrapper .bx-pager.bx-default-pager a {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: url(../images/main/pager.png) no-repeat 0 0;
+}
+
+.slider-1 .bx-wrapper .bx-pager.bx-default-pager a.active,
+.slider-1 .bx-wrapper .bx-pager.bx-default-pager a:focus,
+.slider-1 .bx-wrapper .bx-pager.bx-default-pager a.active:hover {
+  background: url(../images/main/pager.png) no-repeat -14px 0;
+}
+
+.slider-1 .bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background: url(../images/main/pager.png) no-repeat 0 0;
+}
+
+.slider-2 .bx-wrapper .bx-pager.bx-default-pager a {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 3px;
+  background: url(../images/main/pager2.png) no-repeat 0 0;
+}
+
+.slider-2 .bx-wrapper .bx-pager.bx-default-pager a.active,
+.slider-2 .bx-wrapper .bx-pager.bx-default-pager a:focus,
+.slider-2 .bx-wrapper .bx-pager.bx-default-pager a.active:hover {
+  background: url(../images/main/pager2.png) no-repeat -14px 0;
+}
+
+.slider-2 .bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background: url(../images/main/pager2.png) no-repeat 0 0;
+}
+
+/* 재생 정지 버튼 - 전체 */
+.bx-wrapper .bx-controls-auto {
+  position: static !important;
+  font-size: 0 !important;
+  width: auto !important;
+}
+
+.bx-wrapper .bx-controls-auto:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.slider-1 .bx-wrapper .bx-controls-auto:after {
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 7px 0 9px;
+}
+
+.slider-2 .bx-wrapper .bx-controls-auto:after {
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 4px 0 6px;
+}
+
+/* 재생 정지 버튼 - 슬라이더 1 */
+
+.slider-1 .bx-wrapper .bx-controls-auto .bx-start {
+  width: 11px;
+  height: 14px;
+  background: url(../images/main/pager.png) no-repeat -48px 0;
+}
+
+.slider-1 .bx-wrapper .bx-controls-auto .bx-start.active,
+.slider-1 .bx-wrapper .bx-controls-auto .bx-start:focus,
+.slider-1 .bx-wrapper .bx-controls-auto .bx-start.active:hover {
+  background: url(../images/main/pager.png) no-repeat -59px 0;
+}
+
+.slider-1 .bx-wrapper .bx-controls-auto .bx-start:hover {
+  background: url(../images/main/pager.png) no-repeat -48px 0;
+}
+
+
+.slider-1 .bx-wrapper .bx-controls-auto .bx-stop {
+  width: 10px;
+  height: 14px;
+  background: url(../images/main/pager.png) no-repeat -28px 0;
+}
+
+.slider-1 .bx-wrapper .bx-controls-auto .bx-stop.active,
+.slider-1 .bx-wrapper .bx-controls-auto .bx-stop:focus,
+.slider-1 .bx-wrapper .bx-controls-auto .bx-stop.active:hover {
+  background: url(../images/main/pager.png) no-repeat -38px 0;
+}
+
+.slider-1 .bx-wrapper .bx-controls-auto .bx-stop:hover {
+  background: url(../images/main/pager.png) no-repeat -28px 0;
+}
+
+
+/* 재생 정지 버튼 - 슬라이더 2 */
+
+.slider-2 .bx-wrapper .bx-controls-auto .bx-start {
+  width: 11px;
+  height: 14px;
+  background: url(../images/main/pager2.png) no-repeat -48px 0;
+}
+
+.slider-2 .bx-wrapper .bx-controls-auto .bx-start.active,
+.slider-2 .bx-wrapper .bx-controls-auto .bx-start:focus,
+.slider-2 .bx-wrapper .bx-controls-auto .bx-start.active:hover {
+  background: url(../images/main/pager2.png) no-repeat -59px 0;
+}
+
+.slider-2 .bx-wrapper .bx-controls-auto .bx-start:hover {
+  background: url(../images/main/pager2.png) no-repeat -48px 0;
+}
+
+.slider-2 .bx-wrapper .bx-controls-auto .bx-stop {
+  width: 10px;
+  height: 14px;
+  background: url(../images/main/pager2.png) no-repeat -28px 0;
+}
+
+.slider-2 .bx-wrapper .bx-controls-auto .bx-stop.active,
+.slider-2 .bx-wrapper .bx-controls-auto .bx-stop:focus,
+.slider-2 .bx-wrapper .bx-controls-auto .bx-stop.active:hover {
+  background: url(../images/main/pager2.png) no-repeat -38px 0;
+}
+
+.slider-2 .bx-wrapper .bx-controls-auto .bx-stop:hover {
+  background: url(../images/main/pager2.png) no-repeat -28px 0;
+}
+
+

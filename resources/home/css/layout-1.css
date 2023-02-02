@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/* 대체 텍스트 */
+.blind {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
+
+/*clearfix*/
+.clearfix {*zoom:1;} /*ei*/
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* 스킵 내비게이션 */
+#skip-navi li {float:left; position:absolute; display:block; width:200px; top:-30px;}
+#skip-navi a {overflow:hidden; width:1px; height:1px; font-size:16px; color:#fff; text-align:center; white-space:nowrap; padding-top: 7px; z-index:-999;}
+#skip-navi a:focus, #skip-navi a:active {position:absolute; width: 100%; height:30px; left: 2px; top:32px; background:#00a2cc; z-index: 999;}
+
+
+/* 전체 레이아웃 */
+#wrap:after {display: none; content:""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); transition: 0.35s;}
+.row-box{position: relative; width: 1200px; height:100%; margin: 0 auto;}
+.bg {display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 99;}
+
+
+
+/* 헤더 */
+#header-n {position: fixed; left: 0; top: 0; width: 100%; height: 100px; background: #fff; z-index: 100; min-height: unset; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;}
+#header-n:before {content:""; position: absolute; width: 100%; height: 3px; background: linear-gradient(180deg, rgba(34,136,182,1) 0%, rgba(16,164,152,1) 100%);}
+#header-n h1 {position: absolute; left: 0; top: 30px;}
+#header-n h1 a {display: block;}
+.sub-menu-wrap {position: absolute; top: 100px; width: 100%; height: 0; background: linear-gradient(-135deg, rgba(192,215,0,1) 0%, rgba(0,162,204,1) 100%); transition: all 0.25s;}
+
+
+/* 헤더 메인 메뉴 */
+.menu-area {position: absolute; right: 0; top: 0; height: 100%; padding-top: 42px;}
+#main-menu, .util-menu {float: left;}
+#main-menu ul.depth-1 > li {position: relative; float: left; padding: 5px 20px 40px 0;}
+#main-menu ul.depth-1 > li > a span {font-size: 1.16em; color: #000; font-weight: 400;}
+#main-menu ul.depth-1 > li > a span:before {content: ""; left: 0; top: 0; display: inline-block; width: 4px; height: 4px; background: #bfbfbf; border-radius: 50%; vertical-align: middle; margin-right: 20px; margin-bottom: 3px;}
+#main-menu ul.depth-1 > li:first-child > a span:before {display: none;}
+
+/* 헤더 메인 > 서브 메뉴 */
+#main-menu .sub-menu {display: none; position: absolute; top: 50px; width: 700px; padding-top: 20px; z-index: 1;}
+#main-menu .sub-menu {position: absolute; top: 50px; width: 700px; padding-top: 20px; z-index: 1;}
+#main-menu .sub-menu-1 {left: 0;}
+#main-menu .sub-menu-2 {left: 0;}
+#main-menu .sub-menu-3 {left: -50%;}
+#main-menu .sub-menu-4 {left: -50%;}
+#main-menu .sub-menu-5 {left: -120%;}
+
+#main-menu ul.depth-2:after {content: ""; display: block; clear: both; line-height: 0;}
+#main-menu ul.depth-2 li {float: left; padding: 10px 15px 10px 0;}
+#main-menu ul.depth-2 li:before {content: ""; left: 0; top: 0; display: inline-block; width: 3px; height: 3px; background: #fff; border-radius: 50%; vertical-align: middle; margin-right: 10px; margin-bottom: 3px;}
+#main-menu ul.depth-2 li:first-child:before {display: none;} 
+#main-menu ul.depth-2 li span {font-size: 1.02em; color: #fff; font-weight: 500; transition: all .35;}
+#main-menu ul.depth-2 li a:hover span, #main-menu ul.depth-2 li a:focus span {border-bottom: 1px solid #fff;}
+
+/* 헤더 유틸 메뉴 */
+.util-menu {margin-left: 30px;}
+.util-menu ul li {float: left; padding-right: 25px; vertical-align: middle;}
+.util-menu ul li.sitemap {padding-right: 0;}
+.util-menu ul li.zoom {padding-right: 0;}
+
+.util-menu ul li a {display: block;}
+.util-menu ul li.login a {width: 18px; height: 24px; background: url(../images/layout/login.png) no-repeat; margin-top: 2px;}
+.util-menu ul li.signup a {width: 20px; height: 26px; background: url(../images/layout/member.png) no-repeat; margin-top: 1px;}
+.util-menu ul li.zoom a {width: 23px; height: 23px; background: url(../images/layout/zoom.png) no-repeat; margin-top: 2px;}
+
+
+
+/* 헤더 검색 영역 */
+.header-search {position: fixed; left: 0; top: 100px; width: 100%; height: 0; background: #f2f2f2; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.header-search form, .header-search fieldset {height: 100%;}
+.header-search .container {display: flex; justify-content: center; align-items: center; height: 100%; width: 1200px; margin: 0 auto;}
+.header-search input[type="search"]{width: 80%; padding: 0.4em 0.6em; border: 4px solid #46b681; border-radius: 25px; font-size: 1.2em; vertical-align: middle; margin-right: 10px;}
+.header-search button {width: 50px; height: 50px; background: url(../images/layout/search.png) no-repeat; background-size: 100%; vertical-align: middle;}
+
+/* 모바일 메뉴 영역 */
+.btn-mobile {position: absolute; left: 30px; top: 50%; transform: translateY(-50%);}
+.btn-mobile:before {content:"\f0c9"; font-family: "FontAwesome"; font-size: 30px; color: #17a9b4;}
+
+.mobile-area {position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 999;}
+.mobile-area .side-area {width: 60%; height: 100%; background: #fff; overflow-y: auto;}
+
+.mobile-title {padding: 20px 0; background: linear-gradient(45deg, #00c2ea 63%,#a7dd76 100%);}
+.mobile-title h2 {text-align: center;}
+
+
+
+ /* 모바일 유틸 메뉴 */
+.mobile-util-menu {padding: 20px; background: #eee;}
+.mobile-util-menu ul {text-align: center;}
+.mobile-util-menu li {display: inline-block;}
+.mobile-util-menu li:nth-child(1) {padding-right: 14px; border-right: 1px solid #ccc;}
+.mobile-util-menu li:nth-child(2) {padding-left: 10px;}
+.mobile-util-menu li a {font-size: 1.1em; font-weight: 400;}
+
+
+
+/* 모바일 전체 메뉴 */
+.mobile-main-menu {border-top: 1px solid #ddd;}
+.mobile-main-menu ul.depth-1 > li > a {position: relative; display: block; padding: 20px; border-bottom: 1px solid #ddd;}
+.mobile-main-menu ul.depth-1 > li > a:after {content: "\f107"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #333; font-family: "FontAwesome"; font-size: 22px; font-weight: bold;}
+.mobile-main-menu ul.depth-1 > li > a:hover:after, .mobile-main-menu ul.depth-1 > li > a:focus:after {color: #17a9b4;}
+.mobile-main-menu ul.depth-1 > li > a.on:after {content: "\f106"; color: #17a9b4;}
+.mobile-main-menu ul.depth-1 > li > a > span {color: #111; font-size: 1.2em; font-weight: 400; transition: all .25s;}
+.mobile-main-menu ul.depth-1 > li > a:hover > span, .mobile-main-menu ul.depth-1 > li > a:focus > span {color: #17a9b4;}
+
+
+
+/* 모바일 전체 메뉴 > 서브 메뉴 */
+.mobile-main-menu .sub-menu {display: none; background: linear-gradient(-135deg, rgba(192,215,0,1) 0%, rgba(0,162,204,1) 100%); opacity: 0.9;}
+.mobile-main-menu .sub-menu.on {display: block;}
+.mobile-main-menu ul.depth-2 li a {display: block; padding: 18px; transition: all .25s;}
+.mobile-main-menu ul.depth-2 li span {font-size: 1.06em; color: #fff; font-weight: 400; transition: all .25s;}
+.mobile-main-menu ul.depth-2 li a:hover, .mobile-main-menu ul.depth-2 li a:focus {background: rgba(255,255,255,0.3);}
+.mobile-main-menu ul.depth-2 li a:hover span, .mobile-main-menu ul.depth-2 li a:focus span {color: #111;}
+
+
+
+/* 모바일 닫기 버튼 */
+.btn-mobile-close {position: absolute; right: 20px; top: 20px; width: 50px; height: 50px; background: #fff; border-radius: 50%;}
+.btn-mobile-close span:before, .btn-mobile-close span:after {content: ''; position: absolute; left: 24px; top: 12px; height: 28px; width: 2px; background-color: #333;}
+.btn-mobile-close span:before {transform: rotate(45deg);}
+.btn-mobile-close span:after {transform: rotate(-45deg);}
+
+
+/* 헤더 모바일 메뉴 관련 show & hide */
+.header-search {display: none;}
+.btn-mobile {display: none;}
+.mobile-area {display: none;}
+
+
+/* 메인 컨테이너 */
+.main-container-n {margin-top: 100px;}
+
+/* 서브 컨테이너 */
+.sub-container-n {margin-top: 100px;}
+
+
+/* 푸터  레이아웃 */
+#footer-n {background: #252c36;} 
+.foot-area-1 {background: rgba(1,1,1,0.2); border-bottom: 1px solid rgba(255,255,255,0.1);}
+.foot-area-2 {position: relative;  padding: 42px 0;}
+
+
+/* 푸터 상단 - 풋메뉴*/
+.foot-menu {float: left; padding-top: 16px;}
+.foot-menu li {display: inline-block; margin-right: 16px;}
+.foot-menu li:after {content: ""; display: inline-block; width: 1px; height: 14px; background: rgba(255,255,255,0.15); margin-left: 16px; vertical-align: middle; margin-bottom: 2px;}
+.foot-menu li:last-child:after {display: none;}
+.foot-menu li span {color: #fff; font-size: 0.98em; letter-spacing: 0; opacity: 0.7; transition: all .35s;}
+.foot-menu li a:hover span, .foot-menu li a:focus span {opacity: 1; border-bottom: 1px solid #fff;}
+
+
+/* 푸터 상단 - 관련 사이트 */
+.family-sites {position: relative; float: right; width: 220px; height: 50px; border-left: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.1);}
+.family-sites button {position: relative; width: 100%; height: 100%; padding: 10px 20px; color: #fff; font-size: 0.95em; text-align: left;}
+.family-sites button:after {content:"\f107"; position: absolute; right: 30px; top: 50%; transform: translateY(-50%); color: #fff; font-family: "FontAwesome"; font-weight: bold; font-size: 15px;}
+.family-sites button.on:after {content:"\f106";}
+
+.family-sites ul {display: none; position: absolute; left: 0; bottom: 100%; width: 100%; background: rgba(30,35,43,0.9); border: 1px solid rgba(255,255,255,0.1); padding: 20px;}
+.family-sites ul.on {display: block;}
+.family-sites ul li {margin-bottom: 15px;}
+.family-sites ul li:last-child {margin-bottom: 0;}
+.family-sites ul li span {color: #fff; font-size: 1em; opacity: 0.7; transition: all .35s;}
+.family-sites ul li a:hover span, .family-sites ul li a:focus span {opacity: 1; border-bottom: 1px solid #fff;}
+
+
+/* 푸터 하단 */
+h2.foot-logo {display: inline-block; vertical-align: middle; margin-top: 12px;}
+h2.foot-logo a{display: block;}
+address {display: inline-block; margin-left: 45px; vertical-align: middle; margin-top: 12px;}
+address p {color: #fff; font-size: 1.02em; font-weight: 300; letter-spacing: 0;}
+.customer {float: right; color: #fff; background: url(../images/layout/phone.png) no-repeat; padding-left: 80px;}
+.customer p {font-size: 1.3em; letter-spacing: 0.01em; padding-bottom: 7px;}
+.customer span {display: block; font-size: 0.82em; font-weight: 100; opacity: 0.7; line-height: 1.5;}
+.customer span:before {content:""; display: inline-block; width: 3px; height: 3px; background: #fff; border-radius: 50%; margin-right: 5px; vertical-align: middle; margin-bottom: 2px;}

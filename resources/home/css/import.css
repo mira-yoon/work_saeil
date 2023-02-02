@@ -1,0 +1,28 @@
+/* Page Layout */
+@import url(https://saeiledu.co.kr/resources/home/css/reset.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css);
+@import url(font-awesome.min.css);
+@import url(font.css);
+@import url(layout-1.css);
+@import url(layout-2.css);
+@import url(main-1.css);
+@import url(main-2.css);
+@import url(bxslider-custom.css);
+@import url(sub-1.css);
+@import url(sub-2.css);
+
+
+
+
+
+
+
+/* 새일센터 css 파일 연결 테스트 */
+
+@import url(https://saeiledu.co.kr/resources/home/css/common-old.css);
+@import url(https://saeiledu.co.kr/resources/home/css/custom/layout.css);
+@import url(https://saeiledu.co.kr/resources/home/css/plugins.css);
+@import url(https://saeiledu.co.kr/resources/home/css/custom/xeicon/xeicon.min.css);
+@import url(https://saeiledu.co.kr/resources/home/css/custom/main.css?val=001);
+
+
